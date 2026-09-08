@@ -1,0 +1,347 @@
+
+.admin-dialog {
+  width: min(1180px, calc(100% - 24px));
+  max-height: 94vh;
+  padding: 0;
+  overflow: hidden;
+}
+
+.admin-shell {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  height: min(780px, 90vh);
+  min-height: 0;
+}
+
+.admin-sidebar {
+  padding: 28px 20px;
+  background: #102e3c;
+  color: white;
+}
+
+.admin-sidebar .admin-logo {
+  font-size: 24px;
+  font-weight: 750;
+  margin-bottom: 34px;
+}
+
+.admin-sidebar .admin-logo span {
+  color: #72e0c0;
+}
+
+.admin-nav-item {
+  display: block;
+  width: 100%;
+  padding: 12px 13px;
+  margin-bottom: 8px;
+  border: 0;
+  text-align: left;
+  color: #d7e4e9;
+  background: transparent;
+}
+
+.admin-nav-item.active {
+  color: white;
+  background: #1d4a5d;
+}
+
+.admin-role {
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid #315466;
+  color: #b9ccd5;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.admin-main {
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 28px;
+  background: #f3f6f8;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.admin-top h2 {
+  font-size: 25px;
+}
+
+.admin-top p {
+  margin: 7px 0 0;
+  color: #637986;
+}
+
+.admin-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.admin-summary-card {
+  padding: 17px;
+  border: 1px solid #dbe3e7;
+  border-radius: 10px;
+  background: white;
+}
+
+.admin-summary-card span,
+.admin-summary-card small {
+  display: block;
+  color: #657b87;
+  font-size: 13px;
+}
+
+.admin-summary-card strong {
+  display: block;
+  margin: 7px 0 3px;
+  font-size: 25px;
+}
+
+.admin-notice {
+  margin-bottom: 18px;
+  padding: 11px 14px;
+  border: 1px solid #d2e0e6;
+  border-radius: 8px;
+  color: #466473;
+  background: #eaf2f7;
+  font-size: 13px;
+}
+
+.admin-card {
+  border: 1px solid #dbe3e7;
+  border-radius: 11px;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.admin-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5ebee;
+}
+
+.admin-card-head h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.admin-card-head p {
+  margin: 5px 0 0;
+  color: #697e89;
+  font-size: 13px;
+}
+
+.catalog-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.catalog-guide {
+  padding: 16px 20px;
+  color: #536d79;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.catalog-guide code {
+  color: #244b5d;
+  background: #edf3f6;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.catalog-preview {
+  border-top: 1px solid #e5ebee;
+}
+
+.catalog-preview[hidden] {
+  display: none;
+}
+
+.catalog-preview-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: #f7fafb;
+}
+
+.catalog-preview-summary p {
+  margin: 4px 0 0;
+  color: #657b87;
+  font-size: 13px;
+}
+
+.catalog-preview-table {
+  min-width: 720px;
+}
+
+.catalog-preview-table th,
+.catalog-preview-table td {
+  padding: 11px 16px;
+}
+
+.catalog-error {
+  padding: 0 20px 15px;
+  color: #a93524;
+  font-size: 14px;
+}
+
+.admin-table-wrap {
+  overflow: auto;
+}
+
+.admin-table {
+  min-width: 790px;
+}
+
+.admin-table td,
+.admin-table th {
+  padding: 14px 16px;
+}
+
+.admin-table td:first-child {
+  padding-left: 20px;
+}
+
+.admin-table .admin-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.admin-table button {
+  padding: 7px 10px;
+  white-space: nowrap;
+}
+
+.status-inactive {
+  background: #f1f1f1;
+  color: #737373;
+}
+
+.admin-action-panel {
+  padding: 20px;
+  border-top: 3px solid #087e6b;
+  background: #fbfcfc;
+}
+
+.admin-action-panel[hidden] {
+  display: none;
+}
+
+.admin-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 14px;
+}
+
+.admin-form-grid .full {
+  grid-column: 1 / -1;
+}
+
+.admin-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.admin-error {
+  min-height: 20px;
+  color: #a93524;
+  font-size: 14px;
+}
+
+.admin-audit {
+  list-style: none;
+  padding: 0 20px 18px;
+  margin: 0;
+}
+
+.admin-audit li {
+  padding: 13px 0;
+  border-top: 1px solid #e7edef;
+  font-size: 14px;
+}
+
+.admin-audit small {
+  display: block;
+  margin-top: 4px;
+  color: #70838d;
+}
+
+@media (max-width: 760px) {
+  .admin-dialog {
+    width: calc(100% - 16px);
+    height: calc(100dvh - 16px);
+    max-height: calc(100dvh - 16px);
+  }
+
+  .admin-shell {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+
+  .admin-sidebar {
+    display: none;
+  }
+
+  .admin-main {
+    height: 100%;
+    overscroll-behavior: contain;
+    padding: 20px 14px;
+  }
+
+  .admin-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-top {
+    position: relative;
+    padding-right: 58px;
+  }
+
+  .admin-top .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .admin-card-head,
+  .catalog-preview-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .catalog-buttons,
+  .catalog-buttons button {
+    width: 100%;
+  }
+
+  .admin-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form-grid .full {
+    grid-column: auto;
+  }
+}
+/*
+ * CUADRA - PANEL ADMINISTRADOR
+ * Diseño del catálogo, resumen, productos e historial de cambios.
+ */

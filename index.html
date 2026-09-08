@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Compara tu inventario registrado con el conteo físico e identifica diferencias."
+    />
+    <title>Cuadra · Control de inventario</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./"
+        ><span class="mark">≋</span> cuadra<span class="brand-caption"
+          >CONTROL DE INVENTARIO</span
+        ></a
+      ><span class="demo">Versión de prueba</span>
+    </header>
+    <main>
+      <section class="heading">
+        <div>
+          <p class="eyebrow">OPERACIÓN / INVENTARIO</p>
+          <h1>Cada unidad cuenta.</h1>
+          <p>Compara lo registrado con lo que hay en tu tienda.</p>
+        </div>
+        <button id="new-product" class="primary">＋ Agregar producto</button>
+      </section>
+      <aside class="notice">
+        <strong>Espacio de prueba</strong
+        ><span
+          >Datos de ejemplo. Los cambios duran mientras esta página siga
+          abierta; al recargar se reinician.</span
+        >
+      </aside>
+      <section class="metrics" aria-label="Resumen" id="metrics"></section>
+      <section class="workspace">
+        <div class="section-head">
+          <div>
+            <h2>Revisión de inventario</h2>
+            <p>
+              Selecciona un producto para registrar movimientos o contar
+              unidades.
+            </p>
+          </div>
+          <span id="product-total" class="pill"></span>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Stock registrado</th>
+                <th>Último conteo</th>
+                <th>Diferencia del conteo</th>
+                <th>Estado</th>
+                <th><span class="sr">Acciones</span></th>
+              </tr>
+            </thead>
+            <tbody id="inventory"></tbody>
+          </table>
+        </div>
+        <div class="legend">
+          Diferencia = unidades contadas − stock registrado al momento del
+          conteo.
+        </div>
+      </section>
+      <section class="bottom">
+        <article class="workspace">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">SEGUIMIENTO</p>
+              <h2>Productos para revisar</h2>
+            </div>
+          </div>
+          <div id="alerts" class="alerts"></div>
+        </article>
+        <article class="workspace">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">TRAZABILIDAD</p>
+              <h2>Actividad reciente</h2>
+            </div>
+          </div>
+          <ol id="history"></ol>
+        </article>
+      </section>
+      <footer>
+        Cuadra · Piloto retail
+        <span
+          >Las diferencias requieren revisión; no indican por sí solas su
+          causa.</span
+        >
+      </footer>
+    </main>
+    <dialog id="editor">
+      <form id="edit-form">
+        <div class="dialog-head">
+          <h2 id="dialog-title"></h2>
+          <button type="button" id="close" class="icon" aria-label="Cerrar">
+            ×
+          </button>
+        </div>
+        <div id="fields"></div>
+        <p id="form-error" role="alert"></p>
+        <div class="dialog-actions">
+          <button type="button" id="cancel">Cancelar</button
+          ><button type="submit" class="primary">Guardar registro</button>
+        </div>
+      </form>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

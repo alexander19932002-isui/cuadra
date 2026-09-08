@@ -1,0 +1,33 @@
+
+
+.mobile-register {
+  display: none;
+}
+
+@media (max-width: 540px) {
+  .mobile-register {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 11px 12px;
+    border-color: #087e6b;
+    color: #087e6b;
+  }
+
+  .desktop-register {
+    display: none;
+  }
+
+  td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 245px;
+    background: white;
+    box-shadow: 8px 0 12px -12px #102e3c;
+  }
+}
+/*
+ * CUADRA - VISTA MÓVIL
+ * Adaptaciones para celular y pantallas pequeñas.
+ */
