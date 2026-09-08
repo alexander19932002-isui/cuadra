@@ -10,15 +10,15 @@
 // 1. CARGA DE ESTILOS ESPECÍFICOS
 const mobileStyles = document.createElement("link");
 mobileStyles.rel = "stylesheet";
-mobileStyles.href = "css/mobile.css";
+mobileStyles.href = "mobile.css";
 document.head.appendChild(mobileStyles);
 const scannerStyles = document.createElement("link");
 scannerStyles.rel = "stylesheet";
-scannerStyles.href = "css/scanner.css";
+scannerStyles.href = "scanner.css";
 document.head.appendChild(scannerStyles);
 const adminStyles = document.createElement("link");
 adminStyles.rel = "stylesheet";
-adminStyles.href = "css/admin.css";
+adminStyles.href = "admin.css";
 document.head.appendChild(adminStyles);
 
 // 2. DATOS DE EJEMPLO DE LA APLICACIÓN
